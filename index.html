@@ -29,7 +29,8 @@
     </header>
 
     <main id="home">
-      <section class="hero section">
+      <section class="hero section reveal">
+        <div class="hero-bg"></div>
         <div class="container hero-grid">
           <div>
             <p class="kicker" data-i18n="hero.kicker">Premium Digital Partner</p>
@@ -40,18 +41,20 @@
               <a href="#services" class="btn btn-secondary" data-i18n="hero.cta2">Explore Services</a>
             </div>
           </div>
-          <div class="hero-card">
+
+          <aside class="hero-panel reveal-delay">
+            <img src="assets/logo.png" alt="Izerfan Technologies logo" class="hero-logo" />
             <h3 data-i18n="hero.cardTitle">Focused on outcomes</h3>
             <ul>
               <li data-i18n="hero.card1">Clear strategy</li>
               <li data-i18n="hero.card2">Fast implementation</li>
               <li data-i18n="hero.card3">Reliable delivery</li>
             </ul>
-          </div>
+          </aside>
         </div>
       </section>
 
-      <section id="services" class="section">
+      <section id="services" class="section reveal">
         <div class="container">
           <h2 data-i18n="services.title">Services</h2>
           <div class="grid cards-3">
@@ -71,14 +74,14 @@
         </div>
       </section>
 
-      <section id="about" class="section section-muted">
+      <section id="about" class="section section-muted reveal">
         <div class="container">
           <h2 data-i18n="about.title">About Izerfan Technologies</h2>
           <p class="max" data-i18n="about.text">We combine business understanding with engineering quality to ship digital products that are elegant, scalable, and maintainable.</p>
         </div>
       </section>
 
-      <section id="why" class="section">
+      <section id="why" class="section reveal">
         <div class="container">
           <h2 data-i18n="why.title">Why Us</h2>
           <div class="grid cards-3">
@@ -89,17 +92,32 @@
         </div>
       </section>
 
-      <section id="contact" class="section section-muted">
+      <section id="contact" class="section section-muted reveal">
         <div class="container">
-          <h2 data-i18n="contact.title">Contact</h2>
-          <p data-i18n="contact.text">Tell us about your goals and we’ll propose the best next step.</p>
-          <a class="btn" href="mailto:contact@izerfan.com" data-i18n="contact.cta">Contact Us</a>
+          <div class="contact-pro card">
+            <div>
+              <h2 data-i18n="contact.title">Contact</h2>
+              <p data-i18n="contact.text">Tell us about your goals and we’ll propose the best next step.</p>
+            </div>
+            <a class="btn" href="mailto:contact@izerfan.com" data-i18n="contact.cta">Contact Us</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container foot">© <span id="year"></span> Izerfan Technologies</div>
+      <div class="container foot-pro">
+        <div class="foot-brand">
+          <img src="assets/logo.png" alt="Izerfan Technologies logo" class="foot-logo" />
+          <p data-i18n="footer.tag">Premium technology partner for scalable digital growth.</p>
+        </div>
+        <div class="foot-links">
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+      </div>
+      <div class="container foot-bottom">© <span id="year"></span> Izerfan Technologies</div>
     </footer>
 
     <script src="script.js"></script>

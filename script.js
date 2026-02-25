@@ -12,7 +12,8 @@ const dict = {
     "why.title": "Why Us", "why.w1t": "Premium Quality", "why.w1d": "Clean execution, modern UI, and strong technical standards.",
     "why.w2t": "Simple Process", "why.w2d": "Clear communication, milestones, and transparent delivery.",
     "why.w3t": "Long-term Value", "why.w3d": "Built to scale with your business and future needs.",
-    "contact.title": "Contact", "contact.text": "Tell us about your goals and we’ll propose the best next step.", "contact.cta": "Contact Us"
+    "contact.title": "Contact", "contact.text": "Tell us about your goals and we’ll propose the best next step.", "contact.cta": "Contact Us",
+    "footer.tag": "Premium technology partner for scalable digital growth."
   },
   fr: {
     "nav.services": "Services", "nav.about": "À propos", "nav.why": "Pourquoi nous", "nav.contact": "Contact",
@@ -27,7 +28,8 @@ const dict = {
     "why.title": "Pourquoi nous", "why.w1t": "Qualité Premium", "why.w1d": "Exécution propre, interface moderne et standards techniques solides.",
     "why.w2t": "Processus simple", "why.w2d": "Communication claire, jalons et livraison transparente.",
     "why.w3t": "Valeur durable", "why.w3d": "Conçu pour évoluer avec votre business et vos besoins futurs.",
-    "contact.title": "Contact", "contact.text": "Parlez-nous de vos objectifs et nous proposerons la meilleure suite.", "contact.cta": "Nous contacter"
+    "contact.title": "Contact", "contact.text": "Parlez-nous de vos objectifs et nous proposerons la meilleure suite.", "contact.cta": "Nous contacter",
+    "footer.tag": "Partenaire technologique premium pour une croissance digitale durable."
   }
 };
 
@@ -44,4 +46,16 @@ const setLang = (l) => {
 
 document.getElementById("lang-toggle").addEventListener("click", () => setLang(lang === "en" ? "fr" : "en"));
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
 setLang("en");
