@@ -47,6 +47,18 @@ const setLang = (l) => {
 document.getElementById("lang-toggle").addEventListener("click", () => setLang(lang === "en" ? "fr" : "en"));
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const themeToggle = document.getElementById("theme-toggle");
+const applyTheme = (theme) => {
+  const dark = theme === "dark";
+  document.body.classList.toggle("dark", dark);
+  themeToggle.textContent = dark ? "☀" : "◐";
+  localStorage.setItem("izerfan-theme", dark ? "dark" : "light");
+};
+
+themeToggle.addEventListener("click", () => {
+  applyTheme(document.body.classList.contains("dark") ? "light" : "dark");
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -58,4 +70,5 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
+applyTheme(localStorage.getItem("izerfan-theme") || "light");
 setLang("en");

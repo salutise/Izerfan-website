@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Izerfan Technologies</title>
     <meta name="description" content="Izerfan Technologies — Premium technology services and digital solutions." />
+    <meta property="og:title" content="Izerfan Technologies" />
+    <meta property="og:description" content="Premium technology partner for scalable digital growth." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0d5db8" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -24,7 +31,10 @@
             <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
-        <button id="lang-toggle" class="btn btn-secondary" aria-label="Switch language">FR</button>
+        <div class="header-actions">
+          <button id="theme-toggle" class="btn btn-secondary icon-btn" aria-label="Toggle theme">◐</button>
+          <button id="lang-toggle" class="btn btn-secondary" aria-label="Switch language">FR</button>
+        </div>
       </div>
     </header>
 
@@ -98,6 +108,7 @@
             <div>
               <h2 data-i18n="contact.title">Contact</h2>
               <p data-i18n="contact.text">Tell us about your goals and we’ll propose the best next step.</p>
+              <p class="contact-meta">Email: <a href="mailto:contact@izerfan.com">contact@izerfan.com</a></p>
             </div>
             <a class="btn" href="mailto:contact@izerfan.com" data-i18n="contact.cta">Contact Us</a>
           </div>
