@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Izerfan Technologies</title>
+    <meta name="description" content="Izerfan Technologies — Premium technology services and digital solutions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand">
+          <img src="assets/logo.png" alt="Izerfan Technologies logo" class="logo" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#services" data-i18n="nav.services">Services</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#why" data-i18n="nav.why">Why Us</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="lang-toggle" class="btn btn-secondary" aria-label="Switch language">FR</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="kicker" data-i18n="hero.kicker">Premium Digital Partner</p>
+            <h1 data-i18n="hero.title">Modern Technology Solutions for Ambitious Businesses</h1>
+            <p class="lead" data-i18n="hero.text">We design, build, and optimize digital products with a premium standard and practical execution.</p>
+            <div class="actions">
+              <a href="#contact" class="btn" data-i18n="hero.cta1">Start Your Project</a>
+              <a href="#services" class="btn btn-secondary" data-i18n="hero.cta2">Explore Services</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3 data-i18n="hero.cardTitle">Focused on outcomes</h3>
+            <ul>
+              <li data-i18n="hero.card1">Clear strategy</li>
+              <li data-i18n="hero.card2">Fast implementation</li>
+              <li data-i18n="hero.card3">Reliable delivery</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2 data-i18n="services.title">Services</h2>
+          <div class="grid cards-3">
+            <article class="card">
+              <h3 data-i18n="services.s1t">Web Development</h3>
+              <p data-i18n="services.s1d">High-performance websites and platforms optimized for conversion.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="services.s2t">Automation & AI</h3>
+              <p data-i18n="services.s2d">Smart workflows to reduce manual work and boost efficiency.</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="services.s3t">Technical Consulting</h3>
+              <p data-i18n="services.s3d">Architecture, optimization, and strategic guidance for growth.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-muted">
+        <div class="container">
+          <h2 data-i18n="about.title">About Izerfan Technologies</h2>
+          <p class="max" data-i18n="about.text">We combine business understanding with engineering quality to ship digital products that are elegant, scalable, and maintainable.</p>
+        </div>
+      </section>
+
+      <section id="why" class="section">
+        <div class="container">
+          <h2 data-i18n="why.title">Why Us</h2>
+          <div class="grid cards-3">
+            <article class="card"><h3 data-i18n="why.w1t">Premium Quality</h3><p data-i18n="why.w1d">Clean execution, modern UI, and strong technical standards.</p></article>
+            <article class="card"><h3 data-i18n="why.w2t">Simple Process</h3><p data-i18n="why.w2d">Clear communication, milestones, and transparent delivery.</p></article>
+            <article class="card"><h3 data-i18n="why.w3t">Long-term Value</h3><p data-i18n="why.w3d">Built to scale with your business and future needs.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-muted">
+        <div class="container">
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p data-i18n="contact.text">Tell us about your goals and we’ll propose the best next step.</p>
+          <a class="btn" href="mailto:contact@izerfan.com" data-i18n="contact.cta">Contact Us</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container foot">© <span id="year"></span> Izerfan Technologies</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
