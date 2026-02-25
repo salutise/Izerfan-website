@@ -9,6 +9,9 @@ const dict = {
     "services.s2t": "Automation & AI", "services.s2d": "Smart workflows to reduce manual work and boost efficiency.",
     "services.s3t": "Technical Consulting", "services.s3d": "Architecture, optimization, and strategic guidance for growth.",
     "about.title": "About Izerfan Technologies", "about.text": "We combine business understanding with engineering quality to ship digital products that are elegant, scalable, and maintainable.",
+    "about.m1t": "Our Mission", "about.m1d": "Help companies turn ideas into reliable digital experiences with measurable impact.",
+    "about.m2t": "How We Work", "about.m2d": "We keep things simple: clear scope, transparent communication, and high-quality execution.",
+    "about.m3t": "What You Get", "about.m3d": "A modern website or product foundation that is fast, maintainable, and ready to scale.",
     "why.title": "Why Us", "why.w1t": "Premium Quality", "why.w1d": "Clean execution, modern UI, and strong technical standards.",
     "why.w2t": "Simple Process", "why.w2d": "Clear communication, milestones, and transparent delivery.",
     "why.w3t": "Long-term Value", "why.w3d": "Built to scale with your business and future needs.",
@@ -25,6 +28,9 @@ const dict = {
     "services.s2t": "Automatisation & IA", "services.s2d": "Workflows intelligents pour réduire le travail manuel et gagner en efficacité.",
     "services.s3t": "Conseil Technique", "services.s3d": "Architecture, optimisation et accompagnement stratégique pour la croissance.",
     "about.title": "À propos d’Izerfan Technologies", "about.text": "Nous combinons vision business et qualité d’ingénierie pour livrer des produits élégants, scalables et maintenables.",
+    "about.m1t": "Notre mission", "about.m1d": "Aider les entreprises à transformer leurs idées en expériences digitales fiables et mesurables.",
+    "about.m2t": "Notre méthode", "about.m2d": "Nous restons simples: périmètre clair, communication transparente et exécution de qualité.",
+    "about.m3t": "Ce que vous obtenez", "about.m3d": "Une base web moderne, rapide, maintenable et prête à évoluer.",
     "why.title": "Pourquoi nous", "why.w1t": "Qualité Premium", "why.w1d": "Exécution propre, interface moderne et standards techniques solides.",
     "why.w2t": "Processus simple", "why.w2d": "Communication claire, jalons et livraison transparente.",
     "why.w3t": "Valeur durable", "why.w3d": "Conçu pour évoluer avec votre business et vos besoins futurs.",
@@ -51,13 +57,18 @@ const themeToggle = document.getElementById("theme-toggle");
 const applyTheme = (theme) => {
   const dark = theme === "dark";
   document.body.classList.toggle("dark", dark);
-  themeToggle.textContent = dark ? "☀" : "◐";
+  if (themeToggle) {
+    themeToggle.textContent = dark ? "☀" : "◐";
+    themeToggle.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+  }
   localStorage.setItem("izerfan-theme", dark ? "dark" : "light");
 };
 
-themeToggle.addEventListener("click", () => {
-  applyTheme(document.body.classList.contains("dark") ? "light" : "dark");
-});
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    applyTheme(document.body.classList.contains("dark") ? "light" : "dark");
+  });
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
