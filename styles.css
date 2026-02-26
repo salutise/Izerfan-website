@@ -85,6 +85,8 @@ h1 { font-size: clamp(2rem, 4vw, 3.45rem); line-height: 1.05; margin: 0 0 1rem; 
 .cards-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
 .card { transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease; }
 .card:hover { transform: translateY(-5px); box-shadow: 0 22px 42px rgba(13,93,184,.12); border-color: #c8ddfb; }
+.service-card { text-decoration: none; color: inherit; display: block; }
+.service-link { display: inline-block; margin-top: .65rem; color: var(--primary); font-weight: 700; font-size: .95rem; }
 h2 { font-size: clamp(1.5rem, 3vw, 2.3rem); margin: 0 0 1rem; }
 .max { max-width: 75ch; color: var(--muted); }
 .about-grid { margin-top: 1.15rem; display: grid; gap: 1rem; grid-template-columns: repeat(3, minmax(0,1fr)); }
