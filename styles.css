@@ -160,12 +160,17 @@ html[dir="rtl"] .foot-links { direction: rtl; }
 html[dir="rtl"] .checklist { padding-right: 1.1rem; padding-left: 0; }
 html[dir="rtl"] .back-link { direction: rtl; }
 /* Keep technical/contact strings readable in RTL */
-html[dir="rtl"] a[href^="tel:"],
 html[dir="rtl"] a[href^="mailto:"],
 html[dir="rtl"] .contact-meta {
   direction: ltr;
   unicode-bidi: isolate;
   display: inline-block;
+}
+html[dir="rtl"] .phone-ltr {
+  direction: ltr !important;
+  unicode-bidi: bidi-override;
+  display: inline-block;
+  text-align: left;
 }
 
 @media (max-width: 920px) {
