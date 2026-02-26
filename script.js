@@ -198,7 +198,38 @@ const dict = {
 
 let lang = "en";
 const langOrder = ["en", "fr", "ar"];
-const nextLangLabel = { en: "FR", fr: "AR", ar: "EN" };
+
+const renderLangOptions = () => {
+  const langBtn = document.getElementById("lang-toggle");
+  if (!langBtn) return;
+
+  // Current language shown on the main button
+  langBtn.textContent = lang.toUpperCase();
+  langBtn.setAttribute("aria-label", `Current language: ${lang.toUpperCase()}`);
+
+  const parent = langBtn.parentElement;
+  if (!parent) return;
+
+  let optionsWrap = document.getElementById("lang-options");
+  if (!optionsWrap) {
+    optionsWrap = document.createElement("div");
+    optionsWrap.id = "lang-options";
+    optionsWrap.className = "lang-options";
+    parent.appendChild(optionsWrap);
+  }
+
+  optionsWrap.innerHTML = "";
+  const others = langOrder.filter((x) => x !== lang);
+  others.forEach((code) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "btn btn-secondary lang-option-btn";
+    b.textContent = code.toUpperCase();
+    b.setAttribute("aria-label", `Switch language to ${code.toUpperCase()}`);
+    b.addEventListener("click", () => setLang(code));
+    optionsWrap.appendChild(b);
+  });
+};
 
 const setLang = (l) => {
   lang = l;
@@ -211,17 +242,14 @@ const setLang = (l) => {
     if (dict[l] && dict[l][key]) el.textContent = dict[l][key];
   });
 
-  const langBtn = document.getElementById("lang-toggle");
-  if (langBtn) langBtn.textContent = nextLangLabel[l] || "EN";
+  renderLangOptions();
   localStorage.setItem("izerfan-lang", l);
 };
 
 const langBtn = document.getElementById("lang-toggle");
 if (langBtn) {
   langBtn.addEventListener("click", () => {
-    const idx = langOrder.indexOf(lang);
-    const next = langOrder[(idx + 1) % langOrder.length];
-    setLang(next);
+    // Keep current language button informational only.
   });
 }
 document.getElementById("year").textContent = new Date().getFullYear();
