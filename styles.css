@@ -168,7 +168,7 @@ html[dir="rtl"] .contact-meta {
 }
 html[dir="rtl"] .phone-ltr {
   direction: ltr !important;
-  unicode-bidi: bidi-override;
+  unicode-bidi: plaintext;
   display: inline-block;
   text-align: left;
 }
