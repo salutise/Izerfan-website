@@ -159,6 +159,14 @@ html[dir="rtl"] .foot-brand,
 html[dir="rtl"] .foot-links { direction: rtl; }
 html[dir="rtl"] .checklist { padding-right: 1.1rem; padding-left: 0; }
 html[dir="rtl"] .back-link { direction: rtl; }
+/* Keep technical/contact strings readable in RTL */
+html[dir="rtl"] a[href^="tel:"],
+html[dir="rtl"] a[href^="mailto:"],
+html[dir="rtl"] .contact-meta {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
 
 @media (max-width: 920px) {
   .hero-grid, .cards-3, .about-grid, .contact-pro, .foot-pro, .detail-grid, .kpi-strip { grid-template-columns: 1fr; display: grid; }
