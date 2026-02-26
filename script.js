@@ -16,7 +16,11 @@ const dict = {
     "why.w2t": "Simple Process", "why.w2d": "Clear communication, milestones, and transparent delivery.",
     "why.w3t": "Long-term Value", "why.w3d": "Built to scale with your business and future needs.",
     "contact.title": "Contact", "contact.text": "Tell us about your goals and we’ll propose the best next step.", "contact.cta": "Contact Us",
-    "footer.tag": "Premium technology partner for scalable digital growth."
+    "footer.tag": "Premium technology partner for scalable digital growth.",
+    "footer.contactTitle": "Address",
+    "footer.address1": "C1 - F1 - SF3520",
+    "footer.address2": "Ajman Free Zone",
+    "footer.address3": "United Arab Emirates"
   },
   fr: {
     "nav.services": "Services", "nav.about": "À propos", "nav.why": "Pourquoi nous", "nav.contact": "Contact",
@@ -35,7 +39,11 @@ const dict = {
     "why.w2t": "Processus simple", "why.w2d": "Communication claire, jalons et livraison transparente.",
     "why.w3t": "Valeur durable", "why.w3d": "Conçu pour évoluer avec votre business et vos besoins futurs.",
     "contact.title": "Contact", "contact.text": "Parlez-nous de vos objectifs et nous proposerons la meilleure suite.", "contact.cta": "Nous contacter",
-    "footer.tag": "Partenaire technologique premium pour une croissance digitale durable."
+    "footer.tag": "Partenaire technologique premium pour une croissance digitale durable.",
+    "footer.contactTitle": "Adresse",
+    "footer.address1": "C1 - F1 - SF3520",
+    "footer.address2": "Ajman Free Zone",
+    "footer.address3": "Émirats arabes unis"
   }
 };
 
