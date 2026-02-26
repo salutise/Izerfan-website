@@ -199,6 +199,8 @@ const dict = {
 let lang = "en";
 const langOrder = ["en", "fr", "ar"];
 
+const isMobileLangUI = () => window.matchMedia("(max-width: 920px)").matches;
+
 const renderLangOptions = () => {
   const langBtn = document.getElementById("lang-toggle");
   if (!langBtn) return;
@@ -226,9 +228,14 @@ const renderLangOptions = () => {
     b.className = "btn btn-secondary lang-option-btn";
     b.textContent = code.toUpperCase();
     b.setAttribute("aria-label", `Switch language to ${code.toUpperCase()}`);
-    b.addEventListener("click", () => setLang(code));
+    b.addEventListener("click", () => {
+      setLang(code);
+      parent.classList.remove("lang-open");
+    });
     optionsWrap.appendChild(b);
   });
+
+  if (!isMobileLangUI()) parent.classList.remove("lang-open");
 };
 
 const setLang = (l) => {
@@ -249,9 +256,22 @@ const setLang = (l) => {
 const langBtn = document.getElementById("lang-toggle");
 if (langBtn) {
   langBtn.addEventListener("click", () => {
-    // Keep current language button informational only.
+    const parent = langBtn.parentElement;
+    if (!parent) return;
+
+    if (isMobileLangUI()) {
+      parent.classList.toggle("lang-open");
+    }
   });
 }
+
+document.addEventListener("click", (e) => {
+  const langBtn = document.getElementById("lang-toggle");
+  if (!langBtn) return;
+  const parent = langBtn.parentElement;
+  if (!parent || !isMobileLangUI()) return;
+  if (!parent.contains(e.target)) parent.classList.remove("lang-open");
+});
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const themeToggle = document.getElementById("theme-toggle");

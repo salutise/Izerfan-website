@@ -32,7 +32,7 @@ body.dark .site-header { background: rgba(7,19,37,.92); }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 0; }
 .brand { display: inline-flex; align-items: center; }
 .logo { height: 118px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 22px rgba(13,93,184,.18)); }
-.header-actions { display: flex; align-items: center; gap: .55rem; }
+.header-actions { position: relative; display: flex; align-items: center; gap: .55rem; }
 .icon-btn { min-width: 44px; text-align: center; }
 .lang-options { display: flex; gap: .45rem; }
 .lang-option-btn { min-width: 56px; }
@@ -165,4 +165,20 @@ html[dir="rtl"] .back-link { direction: rtl; }
   .nav-links { display: none; }
   .logo { height: 92px; }
   .hero-logo { width: min(100%, 280px); }
+
+  /* Compact language dropdown on mobile */
+  .lang-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + .45rem);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: .8rem;
+    padding: .35rem;
+    box-shadow: 0 12px 28px rgba(13,93,184,.16);
+    z-index: 30;
+  }
+  .header-actions.lang-open .lang-options { display: flex; flex-direction: column; }
+  .lang-option-btn { min-width: 64px; }
 }
