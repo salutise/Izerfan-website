@@ -128,21 +128,102 @@ const dict = {
     "stc.f2q": "Faites-vous aussi l'implémentation ?", "stc.f2a": "Oui. Nous pouvons rester en advisory ou accompagner l'exécution avec votre équipe.",
     "stc.f3q": "À quoi ressemble une première mission ?", "stc.f3a": "Un audit ciblé + recommandations et roadmap concrète des prochaines étapes.",
     "stc.cta": "Réserver un diagnostic technique"
+  },
+  ar: {
+    "nav.services": "الخدمات", "nav.about": "من نحن", "nav.why": "لماذا نحن", "nav.contact": "تواصل",
+    "hero.kicker": "شريك رقمي متميز", "hero.title": "حلول تقنية حديثة للشركات الطموحة",
+    "hero.text": "نصمّم ونطوّر ونحسّن المنتجات الرقمية بمعيار احترافي وتنفيذ عملي.",
+    "hero.cta1": "ابدأ مشروعك", "hero.cta2": "استكشف الخدمات", "hero.cardTitle": "نركّز على النتائج",
+    "hero.card1": "استراتيجية واضحة", "hero.card2": "تنفيذ سريع", "hero.card3": "تسليم موثوق",
+    "services.title": "الخدمات", "services.s1t": "تطوير الويب", "services.s1d": "مواقع ومنصات عالية الأداء ومهيأة للتحويل.",
+    "services.s2t": "الأتمتة والذكاء الاصطناعي", "services.s2d": "مسارات عمل ذكية لتقليل العمل اليدوي ورفع الكفاءة.",
+    "services.s3t": "الاستشارات التقنية", "services.s3d": "هندسة معمارية وتحسين وإرشاد استراتيجي للنمو.",
+    "about.title": "عن Izerfan Technologies", "about.text": "نجمع بين فهم الأعمال وجودة الهندسة لبناء منتجات رقمية أنيقة وقابلة للتوسع وسهلة الصيانة.",
+    "about.m1t": "رسالتنا", "about.m1d": "مساعدة الشركات على تحويل الأفكار إلى تجارب رقمية موثوقة وذات أثر ملموس.",
+    "about.m2t": "طريقة عملنا", "about.m2d": "نحافظ على البساطة: نطاق واضح، تواصل شفاف، وتنفيذ عالي الجودة.",
+    "about.m3t": "ما الذي تحصل عليه", "about.m3d": "أساس ويب حديث وسريع وقابل للصيانة وجاهز للتوسع.",
+    "why.title": "لماذا نحن", "why.w1t": "جودة متميزة", "why.w1d": "تنفيذ نظيف، واجهات حديثة، ومعايير تقنية قوية.",
+    "why.w2t": "عملية بسيطة", "why.w2d": "تواصل واضح، مراحل محددة، وتسليم شفاف.",
+    "why.w3t": "قيمة طويلة الأمد", "why.w3d": "مبني ليتطور مع أعمالك واحتياجاتك المستقبلية.",
+    "contact.title": "تواصل", "contact.text": "أخبرنا بأهدافك وسنقترح لك الخطوة الأنسب.", "contact.cta": "تواصل معنا",
+    "footer.tag": "شريك تقني متميز لنمو رقمي قابل للتوسع.",
+    "footer.contactTitle": "العنوان",
+    "footer.address1": "C1 - F1 - SF3520",
+    "footer.address2": "منطقة عجمان الحرة",
+    "footer.address3": "الإمارات العربية المتحدة",
+
+    "service.back": "العودة إلى الخدمات ←",
+    "service.faq": "الأسئلة الشائعة",
+
+    "swd.h1": "تطوير الويب",
+    "swd.lead": "مستوحاة من أفضل صفحات الخدمات: قيمة واضحة، عملية شفافة، ونتائج أعمال ملموسة.",
+    "swd.k1t": "سريع", "swd.k1d": "هندسة تركز على الأداء وكود نظيف.",
+    "swd.k2t": "قابل للتوسع", "swd.k2d": "مصمم لينمو مع منتجك وحجم الزيارات.",
+    "swd.k3t": "موجّه للتحويل", "swd.k3d": "تجربة وواجهة مستخدم لتحويل الزيارات إلى فرص.",
+    "swd.c1t": "ماذا نبني", "swd.c1l1": "مواقع شركات وصفحات هبوط احترافية", "swd.c1l2": "تطبيقات ويب مخصصة وبوابات داخلية", "swd.c1l3": "متاجر إلكترونية ومسارات تحويل", "swd.c1l4": "تنفيذ CMS وسير عمل المحتوى",
+    "swd.c2t": "آلية العمل", "swd.c2l1": "الاستكشاف: الأهداف والجمهور والتموضع", "swd.c2l2": "UX/UI: وايرفريم، نظام تصميم، نماذج أولية", "swd.c2l3": "البناء: واجهات وخلفية جاهزة للإنتاج", "swd.c2l4": "الإطلاق: اختبار جودة، تحليلات، وتحسين مستمر",
+    "swd.c3t": "المخرجات", "swd.c3l1": "صفحات متجاوبة (جوال/لوحي/سطح مكتب)", "swd.c3l2": "هيكل جاهز لمحركات البحث + أساس تقني", "swd.c3l3": "تحسين السرعة (Core Web Vitals)", "swd.c3l4": "توثيق ودعم التسليم",
+    "swd.f1q": "كم يستغرق المشروع عادة؟", "swd.f1a": "عادة من 2 إلى 8 أسابيع حسب النطاق وعدد الصفحات/الميزات.",
+    "swd.f2q": "هل يمكنكم إعادة تصميم موقع قائم؟", "swd.f2a": "نعم. نحدث الشكل، نحسن السرعة، ونحافظ على أساس SEO.",
+    "swd.f3q": "هل تقدمون دعماً مستمراً؟", "swd.f3a": "نعم، مع خطط صيانة وتحسين اختيارية بعد الإطلاق.",
+    "swd.cta": "ناقش مشروعك الرقمي",
+
+    "sai.h1": "الأتمتة والذكاء الاصطناعي",
+    "sai.lead": "مصممة مثل أفضل صفحات الاستشارات: حالات استخدام عملية، مراحل واضحة، وعائد قابل للقياس.",
+    "sai.k1t": "عمل يدوي أقل", "sai.k1d": "أتمتة العمليات المتكررة من البداية للنهاية.",
+    "sai.k2t": "قرارات أسرع", "sai.k2d": "مسارات عمل مدعومة بالذكاء الاصطناعي وإثراء البيانات.",
+    "sai.k3t": "تكلفة أقل", "sai.k3d": "تقليل الاحتكاك التشغيلي والأخطاء البشرية.",
+    "sai.c1t": "مجالات الأتمتة", "sai.c1l1": "التقاط العملاء المحتملين وتأهيلهم وربطهم مع CRM", "sai.c1l2": "فرز دعم العملاء وصياغة الردود", "sai.c1l3": "عمليات داخلية: موافقات، إشعارات، تقارير", "sai.c1l4": "مسارات محتوى ونشر اجتماعي",
+    "sai.c2t": "مراحل التنفيذ", "sai.c2l1": "التدقيق: تحديد نقاط الاختناق والفرص السريعة", "sai.c2l2": "التصميم: المعمارية وضوابط الجودة", "sai.c2l3": "التنفيذ: التكاملات + أدوات/برومبتات الذكاء", "sai.c2l4": "التحسين: مراقبة الجودة والتطوير المستمر",
+    "sai.c3t": "ما الذي تحصل عليه", "sai.c3l1": "مسارات تشغيل جاهزة مع قابلية المراقبة", "sai.c3l2": "منطق أمان وتحكم بشري", "sai.c3l3": "توثيق تشغيلي + تدريب الفريق", "sai.c3l4": "لوحة مؤشرات KPI لقياس الأثر",
+    "sai.f1q": "هل نحتاج لتغيير أدواتنا الحالية؟", "sai.f1a": "لا. نبدأ بالتكامل مع بيئتك الحالية ثم نحسن تدريجياً.",
+    "sai.f2q": "كيف تديرون الجودة والسلامة؟", "sai.f2a": "بطبقات تحقق، مسارات بديلة، وتصعيد واضح للعنصر البشري عند الحاجة.",
+    "sai.f3q": "متى تظهر النتائج؟", "sai.f3a": "النتائج السريعة خلال أيام، والبرامج الأكبر خلال 2–6 أسابيع.",
+    "sai.cta": "خطط لخارطة طريق الأتمتة",
+
+    "stc.h1": "الاستشارات التقنية",
+    "stc.lead": "مبنية على أفضل صفحات الاستشارات: وضوح استراتيجي، تقليل المخاطر، وتوصيات قابلة للتنفيذ.",
+    "stc.k1t": "خارطة طريق واضحة", "stc.k1d": "أولويات مرتبطة مباشرة بنتائج الأعمال.",
+    "stc.k2t": "إدارة المخاطر", "stc.k2d": "رؤية شاملة للمعمارية والأداء والأمن.",
+    "stc.k3t": "دعم التنفيذ", "stc.k3d": "إرشاد عملي من التخطيط حتى الإطلاق.",
+    "stc.c1t": "مجالات الاستشارة", "stc.c1l1": "مراجعة المعمارية وخطة التحديث", "stc.c1l2": "تحسين البنية التحتية والسحابة", "stc.c1l3": "تحسين عمليات التسليم وعمل الفريق", "stc.c1l4": "توصيات الأمن والأداء",
+    "stc.c2t": "نموذج التعاون", "stc.c2l1": "ورشة استكشاف: السياق والقيود", "stc.c2l2": "تقييم: تدقيق تقني للوضع الحالي", "stc.c2l3": "خارطة طريق: تحسينات مرحلية بأولويات واضحة", "stc.c2l4": "متابعة التنفيذ: دعم استشاري أثناء التطبيق",
+    "stc.c3t": "نتائج متوقعة", "stc.c3l1": "موثوقية وأداء أعلى للأنظمة", "stc.c3l2": "تقليل الدين التقني وإعادة العمل", "stc.c3l3": "قرارات أفضل في الأدوات والمعمارية", "stc.c3l4": "دورات تسليم أسرع وأكثر قابلية للتنبؤ",
+    "stc.f1q": "هل الخدمة مخصصة للشركات الكبيرة فقط؟", "stc.f1a": "لا. نكيّف النطاق للشركات الناشئة والصغيرة والمتوسطة والكبيرة.",
+    "stc.f2q": "هل تقدمون التنفيذ أيضاً؟", "stc.f2a": "نعم. يمكننا الاكتفاء بالاستشارة أو دعم التنفيذ مع فريقك.",
+    "stc.f3q": "كيف تبدو أول مهمة؟", "stc.f3a": "تدقيق مركز + توصيات عملية + خارطة خطوات واضحة.",
+    "stc.cta": "احجز تقييماً تقنياً"
   }
 };
 
 let lang = "en";
+const langOrder = ["en", "fr", "ar"];
+const nextLangLabel = { en: "FR", fr: "AR", ar: "EN" };
+
 const setLang = (l) => {
   lang = l;
   document.documentElement.lang = l;
+  document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+  document.body.classList.toggle("rtl", l === "ar");
+
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (dict[l][key]) el.textContent = dict[l][key];
+    if (dict[l] && dict[l][key]) el.textContent = dict[l][key];
   });
-  document.getElementById("lang-toggle").textContent = l === "en" ? "FR" : "EN";
+
+  const langBtn = document.getElementById("lang-toggle");
+  if (langBtn) langBtn.textContent = nextLangLabel[l] || "EN";
+  localStorage.setItem("izerfan-lang", l);
 };
 
-document.getElementById("lang-toggle").addEventListener("click", () => setLang(lang === "en" ? "fr" : "en"));
+const langBtn = document.getElementById("lang-toggle");
+if (langBtn) {
+  langBtn.addEventListener("click", () => {
+    const idx = langOrder.indexOf(lang);
+    const next = langOrder[(idx + 1) % langOrder.length];
+    setLang(next);
+  });
+}
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const themeToggle = document.getElementById("theme-toggle");
@@ -174,4 +255,4 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
 applyTheme(localStorage.getItem("izerfan-theme") || "light");
-setLang("en");
+setLang(localStorage.getItem("izerfan-lang") || "en");

@@ -149,6 +149,15 @@ body.dark .foot-block { background: color-mix(in oklab, var(--surface) 94%, #000
 }
 .back-link:hover { text-decoration: underline; }
 
+/* RTL support (Arabic) */
+html[dir="rtl"] body { text-align: right; }
+html[dir="rtl"] .nav-wrap,
+html[dir="rtl"] .header-actions,
+html[dir="rtl"] .foot-brand,
+html[dir="rtl"] .foot-links { direction: rtl; }
+html[dir="rtl"] .checklist { padding-right: 1.1rem; padding-left: 0; }
+html[dir="rtl"] .back-link { direction: rtl; }
+
 @media (max-width: 920px) {
   .hero-grid, .cards-3, .about-grid, .contact-pro, .foot-pro, .detail-grid, .kpi-strip { grid-template-columns: 1fr; display: grid; }
   .nav-links { display: none; }
