@@ -139,7 +139,14 @@ body.dark .foot-block { background: color-mix(in oklab, var(--surface) 94%, #000
 .kpi strong { display: block; font-size: 1.2rem; color: var(--primary); }
 .checklist { margin: .4rem 0 0; padding-left: 1.1rem; color: var(--muted); line-height: 1.7; }
 .faq-item + .faq-item { margin-top: .65rem; }
-.back-link { color: var(--primary); text-decoration: none; font-weight: 700; }
+.back-link {
+  display: inline-block;
+  margin-bottom: .4rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: .95rem;
+}
 .back-link:hover { text-decoration: underline; }
 
 @media (max-width: 920px) {
